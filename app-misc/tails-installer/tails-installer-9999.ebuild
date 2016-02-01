@@ -18,9 +18,15 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND="dev-python/PyQt4
-	app-arch/p7zip
-	dev-python/configobj
-	dev-python/urlgrabber
-	dev-python/python-distutils-extra
-	dev-python/pygobject
-	dev-python/pyparted"
+        app-arch/p7zip
+        dev-python/configobj
+        dev-python/urlgrabber
+        dev-python/python-distutils-extra
+        dev-python/pygobject
+        dev-python/pyparted
+        app-cdr/cdrtools
+        sys-boot/syslinux
+        sys-apps/gptfdisk"
+
+PATCHES=( "${FILESDIR}"/sgdisk.patch )
+
